@@ -47,6 +47,7 @@
     self.manager.desiredAccuracy = kCLLocationAccuracyKilometer;
     [self.progressIndicator setHidden:NO];
     [self.progressIndicator startAnimating];
+     [self getCurrentWithLat:self->latitude andLon:self->lontitude];
 }
 
 
@@ -65,7 +66,6 @@
         [manager stopUpdatingLocation];
         latitude = current.coordinate.latitude;
         lontitude = current.coordinate.longitude;
-        [self getCurrentWithLat:latitude andLon:lontitude];
     }
     [self.geocoder reverseGeocodeLocation:current completionHandler:^(NSArray *placemarks, NSError *error) {
         if (error == nil && placemarks.count >0) {

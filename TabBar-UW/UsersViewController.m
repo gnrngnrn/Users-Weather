@@ -94,5 +94,9 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     controller.usersController = _usersController;
     controller.delegate = self;
 }
+-(void) viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
 
 @end

@@ -171,7 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daa-1r-PAd">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daa-1r-PAd">
                                 <rect key="frame" x="0.0" y="63" width="143" height="144"/>
                                 <color key="backgroundColor" red="0.89885680180000005" green="0.89383525549999998" blue="0.90387834820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -194,7 +194,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-7j-pA8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-7j-pA8">
                                 <rect key="frame" x="0.0" y="63" width="143" height="150"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -223,7 +223,7 @@
                                     <action selector="imageChose:" destination="zgo-SE-Rmt" eventType="touchUpInside" id="uAq-k2-pwa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVk-im-nR3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVk-im-nR3">
                                 <rect key="frame" x="26" y="215" width="102" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="0bl-um-nXX"/>
@@ -290,7 +290,7 @@
                                     <outlet property="delegate" destination="zgo-SE-Rmt" id="P8h-PM-cfS"/>
                                 </connections>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age is -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWD-o8-VVn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Age is -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWD-o8-VVn">
                                 <rect key="frame" x="171" y="92" width="59" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="Y3c-6Y-Lha"/>
@@ -337,7 +337,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-jy-H4Y">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-jy-H4Y">
                                 <rect key="frame" x="238" y="83" width="83" height="34"/>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.47843137254901963" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -364,7 +364,7 @@
                                     <action selector="performAgePick:" destination="zgo-SE-Rmt" eventType="touchUpInside" id="eRB-fh-Yxl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enabled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDy-qz-asl">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enabled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDy-qz-asl">
                                 <rect key="frame" x="171" y="171" width="70" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="hwB-8p-uPs"/>
@@ -388,7 +388,7 @@
                                     <rect key="frame" x="165" y="160" width="70" height="21"/>
                                 </variation>
                             </label>
-                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rp-Ps-vf2">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rp-Ps-vf2">
                                 <rect key="frame" x="195" y="0.0" width="100" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
@@ -398,7 +398,7 @@
                                     <rect key="frame" x="236" y="67" width="100" height="50"/>
                                 </variation>
                             </pickerView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCB-0k-O2i">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCB-0k-O2i">
                                 <rect key="frame" x="262" y="166" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="PDS-Ni-aPh"/>
@@ -478,10 +478,10 @@
                                 <exclude reference="nUh-sa-RHC"/>
                                 <exclude reference="Idc-DC-xnJ"/>
                                 <exclude reference="51d-wg-kzg"/>
-                                <exclude reference="7HO-3N-3ud"/>
-                                <exclude reference="vnq-Ut-4oW"/>
                                 <exclude reference="Dh4-I5-Za2"/>
                                 <exclude reference="Wsl-l6-XP0"/>
+                                <exclude reference="7HO-3N-3ud"/>
+                                <exclude reference="vnq-Ut-4oW"/>
                                 <exclude reference="7PS-kq-0xK"/>
                                 <exclude reference="OaT-Rh-mSc"/>
                                 <exclude reference="Ndv-RP-Jf9"/>
@@ -506,10 +506,10 @@
                                 <include reference="nUh-sa-RHC"/>
                                 <include reference="Idc-DC-xnJ"/>
                                 <include reference="51d-wg-kzg"/>
-                                <include reference="7HO-3N-3ud"/>
-                                <include reference="vnq-Ut-4oW"/>
                                 <include reference="Dh4-I5-Za2"/>
                                 <include reference="Wsl-l6-XP0"/>
+                                <include reference="7HO-3N-3ud"/>
+                                <include reference="vnq-Ut-4oW"/>
                                 <include reference="3xI-es-gM7"/>
                                 <include reference="hPw-W5-X55"/>
                             </mask>

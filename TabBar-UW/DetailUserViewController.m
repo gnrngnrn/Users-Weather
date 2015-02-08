@@ -32,7 +32,6 @@
     [self.imageButton setHidden:YES];
     self.platformD = [self platformString];
     self.offSet = [self chooseOffset];
-    NSLog(@"%f",self.offSet);
 }
 
 -(IBAction)editUser:(id)sender
@@ -70,10 +69,8 @@
     _userEntity.imageURL = imageURL;
     _userEntity.isEnabled = ([_enableTumpler isOn]) ? YES : NO;
     [_usersController addNewUserEntity: _userEntity];
-    [_usersController saveToPlist];
     [_usersController sortArrayOfUsers];
     [_usersController saveToPlist];
-    [self.delegate.tableView reloadData];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
@@ -242,7 +239,7 @@ numberOfRowsInComponent:(NSInteger)component
     if ([platform isEqualToString:@"x86_64"])       return @"Simulator";
     return platform;
 }
--(float) chooseOffset{
+-(float)chooseOffset{
     if ([self.platformD isEqualToString:@"iPhone 4S"]) {
         return 250.0;
     }else if ([self.platformD isEqualToString:@"iPhone 4"]) {
