@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BC5B5A51A80306E001F34B8 /* iPad-Non-Retina-Launch-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5B5A41A80306E001F34B8 /* iPad-Non-Retina-Launch-Landscape.png */; };
+		1BC5B5A81A810B30001F34B8 /* UsersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5B5A71A810B30001F34B8 /* UsersController.m */; };
+		1BC5B5E01A81964C001F34B8 /* Universal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5B5DF1A81964C001F34B8 /* Universal.storyboard */; };
+		1BC5B5E31A82D606001F34B8 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5B5E11A82D606001F34B8 /* lock.png */; };
+		1BC5B5E41A82D606001F34B8 /* unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5B5E21A82D606001F34B8 /* unlock.png */; };
+		1BC5B6E21A86D5F3001F34B8 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5B6E01A86D5F3001F34B8 /* CustomTableViewCell.m */; };
 		1BE666F41A7DA1EB0005F52A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE666F31A7DA1EB0005F52A /* Foundation.framework */; };
 		1BE666F61A7DA1EB0005F52A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE666F51A7DA1EB0005F52A /* CoreGraphics.framework */; };
 		1BE666F81A7DA1EB0005F52A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE666F71A7DA1EB0005F52A /* UIKit.framework */; };
@@ -28,18 +34,13 @@
 		1BE6673C1A7DA2330005F52A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667311A7DA2330005F52A /* AFURLRequestSerialization.m */; };
 		1BE6673D1A7DA2330005F52A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667331A7DA2330005F52A /* AFURLResponseSerialization.m */; };
 		1BE6673E1A7DA2330005F52A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667351A7DA2330005F52A /* AFURLSessionManager.m */; };
-		1BE6674D1A7DA3260005F52A /* AgePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667401A7DA3260005F52A /* AgePickerViewController.m */; };
 		1BE6674E1A7DA3260005F52A /* DetailUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667421A7DA3260005F52A /* DetailUserViewController.m */; };
-		1BE6674F1A7DA3260005F52A /* SingletonUsersArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667441A7DA3260005F52A /* SingletonUsersArray.m */; };
 		1BE667501A7DA3260005F52A /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667461A7DA3260005F52A /* UserEntity.m */; };
 		1BE667511A7DA3260005F52A /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE667481A7DA3260005F52A /* UsersViewController.m */; };
-		1BE667521A7DA3260005F52A /* Wheather.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6674A1A7DA3260005F52A /* Wheather.m */; };
 		1BE667531A7DA3260005F52A /* WheatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6674C1A7DA3260005F52A /* WheatherViewController.m */; };
-		1BE667561A7DA3B60005F52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE667551A7DA3B60005F52A /* Main.storyboard */; };
 		1BE667581A7DA3CB0005F52A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE667571A7DA3CB0005F52A /* CoreLocation.framework */; };
 		1BE6675B1A7DA4070005F52A /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE667591A7DA4070005F52A /* user.png */; };
 		1BE6675C1A7DA4070005F52A /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6675A1A7DA4070005F52A /* weather.png */; };
-		1BE6675E1A7DA56D0005F52A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6675D1A7DA56D0005F52A /* MainStoryboard_iPad.storyboard */; };
 		1BE667771A7E59300005F52A /* IPhoneRetinaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE667741A7E59300005F52A /* IPhoneRetinaIcon.png */; };
 		1BE667781A7E59300005F52A /* IPadNon-Retina-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE667751A7E59300005F52A /* IPadNon-Retina-Icon.png */; };
 		1BE667791A7E59300005F52A /* iPadRetinaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE667761A7E59300005F52A /* iPadRetinaIcon.png */; };
@@ -61,6 +62,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BC5B5A41A80306E001F34B8 /* iPad-Non-Retina-Launch-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad-Non-Retina-Launch-Landscape.png"; sourceTree = "<group>"; };
+		1BC5B5A61A810B30001F34B8 /* UsersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersController.h; sourceTree = "<group>"; };
+		1BC5B5A71A810B30001F34B8 /* UsersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersController.m; sourceTree = "<group>"; };
+		1BC5B5DF1A81964C001F34B8 /* Universal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Universal.storyboard; sourceTree = "<group>"; };
+		1BC5B5E11A82D606001F34B8 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		1BC5B5E21A82D606001F34B8 /* unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlock.png; sourceTree = "<group>"; };
+		1BC5B6E01A86D5F3001F34B8 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		1BC5B6E11A86D5F3001F34B8 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		1BE666F01A7DA1EB0005F52A /* TabBar-UW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TabBar-UW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE666F31A7DA1EB0005F52A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BE666F51A7DA1EB0005F52A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,25 +105,17 @@
 		1BE667331A7DA2330005F52A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		1BE667341A7DA2330005F52A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		1BE667351A7DA2330005F52A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		1BE6673F1A7DA3260005F52A /* AgePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgePickerViewController.h; sourceTree = "<group>"; };
-		1BE667401A7DA3260005F52A /* AgePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgePickerViewController.m; sourceTree = "<group>"; };
 		1BE667411A7DA3260005F52A /* DetailUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailUserViewController.h; sourceTree = "<group>"; };
 		1BE667421A7DA3260005F52A /* DetailUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailUserViewController.m; sourceTree = "<group>"; };
-		1BE667431A7DA3260005F52A /* SingletonUsersArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonUsersArray.h; sourceTree = "<group>"; };
-		1BE667441A7DA3260005F52A /* SingletonUsersArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonUsersArray.m; sourceTree = "<group>"; };
 		1BE667451A7DA3260005F52A /* UserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEntity.h; sourceTree = "<group>"; };
 		1BE667461A7DA3260005F52A /* UserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
 		1BE667471A7DA3260005F52A /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
 		1BE667481A7DA3260005F52A /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
-		1BE667491A7DA3260005F52A /* Wheather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wheather.h; sourceTree = "<group>"; };
-		1BE6674A1A7DA3260005F52A /* Wheather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wheather.m; sourceTree = "<group>"; };
 		1BE6674B1A7DA3260005F52A /* WheatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheatherViewController.h; sourceTree = "<group>"; };
 		1BE6674C1A7DA3260005F52A /* WheatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheatherViewController.m; sourceTree = "<group>"; };
-		1BE667551A7DA3B60005F52A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1BE667571A7DA3CB0005F52A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1BE667591A7DA4070005F52A /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		1BE6675A1A7DA4070005F52A /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather.png; sourceTree = "<group>"; };
-		1BE6675D1A7DA56D0005F52A /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1BE667741A7E59300005F52A /* IPhoneRetinaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IPhoneRetinaIcon.png; sourceTree = "<group>"; };
 		1BE667751A7E59300005F52A /* IPadNon-Retina-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPadNon-Retina-Icon.png"; sourceTree = "<group>"; };
 		1BE667761A7E59300005F52A /* iPadRetinaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadRetinaIcon.png; sourceTree = "<group>"; };
@@ -189,18 +190,13 @@
 				1BE667221A7DA2330005F52A /* AFNetworking */,
 				1BE667021A7DA1EB0005F52A /* AppDelegate.h */,
 				1BE667031A7DA1EB0005F52A /* AppDelegate.m */,
-				1BE6673F1A7DA3260005F52A /* AgePickerViewController.h */,
-				1BE667401A7DA3260005F52A /* AgePickerViewController.m */,
 				1BE667411A7DA3260005F52A /* DetailUserViewController.h */,
 				1BE667421A7DA3260005F52A /* DetailUserViewController.m */,
-				1BE667431A7DA3260005F52A /* SingletonUsersArray.h */,
-				1BE667441A7DA3260005F52A /* SingletonUsersArray.m */,
 				1BE667471A7DA3260005F52A /* UsersViewController.h */,
 				1BE667481A7DA3260005F52A /* UsersViewController.m */,
 				1BE6674B1A7DA3260005F52A /* WheatherViewController.h */,
 				1BE6674C1A7DA3260005F52A /* WheatherViewController.m */,
-				1BE667551A7DA3B60005F52A /* Main.storyboard */,
-				1BE6675D1A7DA56D0005F52A /* MainStoryboard_iPad.storyboard */,
+				1BC5B5DF1A81964C001F34B8 /* Universal.storyboard */,
 				1BE667051A7DA1EB0005F52A /* Images.xcassets */,
 				1BE666FA1A7DA1EB0005F52A /* Supporting Files */,
 			);
@@ -267,8 +263,10 @@
 			children = (
 				1BE667451A7DA3260005F52A /* UserEntity.h */,
 				1BE667461A7DA3260005F52A /* UserEntity.m */,
-				1BE667491A7DA3260005F52A /* Wheather.h */,
-				1BE6674A1A7DA3260005F52A /* Wheather.m */,
+				1BC5B5A61A810B30001F34B8 /* UsersController.h */,
+				1BC5B6E01A86D5F3001F34B8 /* CustomTableViewCell.m */,
+				1BC5B6E11A86D5F3001F34B8 /* CustomTableViewCell.h */,
+				1BC5B5A71A810B30001F34B8 /* UsersController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -279,10 +277,13 @@
 				1BE667591A7DA4070005F52A /* user.png */,
 				1BE667741A7E59300005F52A /* IPhoneRetinaIcon.png */,
 				1BE667751A7E59300005F52A /* IPadNon-Retina-Icon.png */,
+				1BC5B5E11A82D606001F34B8 /* lock.png */,
+				1BC5B5E21A82D606001F34B8 /* unlock.png */,
 				1BE667761A7E59300005F52A /* iPadRetinaIcon.png */,
 				1BE667841A7E5C460005F52A /* iPadNon-Retina-Launch.png */,
 				1BE667861A7E6B1E0005F52A /* iPhone-Retina-Launch.png */,
 				1BE667901A7ECF680005F52A /* iPad-Retina-Launch-Landscape.png */,
+				1BC5B5A41A80306E001F34B8 /* iPad-Non-Retina-Launch-Landscape.png */,
 				1BE667871A7E6B1E0005F52A /* iPhone-Non-Retina-Launch.png */,
 				1BE667801A7E5BCA0005F52A /* iPad-Retina-Launch.png */,
 				1BE6675A1A7DA4070005F52A /* weather.png */,
@@ -366,19 +367,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE667881A7E6B1E0005F52A /* iPhone-Retina-Launch.png in Resources */,
-				1BE6675E1A7DA56D0005F52A /* MainStoryboard_iPad.storyboard in Resources */,
 				1BE667911A7ECF680005F52A /* iPad-Retina-Launch-Landscape.png in Resources */,
 				1BE667781A7E59300005F52A /* IPadNon-Retina-Icon.png in Resources */,
 				1BE667771A7E59300005F52A /* IPhoneRetinaIcon.png in Resources */,
+				1BC5B5E31A82D606001F34B8 /* lock.png in Resources */,
 				1BE667821A7E5BCA0005F52A /* iPad-Retina-Launch.png in Resources */,
 				1BE667791A7E59300005F52A /* iPadRetinaIcon.png in Resources */,
 				1BE6675C1A7DA4070005F52A /* weather.png in Resources */,
-				1BE667561A7DA3B60005F52A /* Main.storyboard in Resources */,
 				1BE666FE1A7DA1EB0005F52A /* InfoPlist.strings in Resources */,
 				1BE6675B1A7DA4070005F52A /* user.png in Resources */,
 				1BE667061A7DA1EB0005F52A /* Images.xcassets in Resources */,
+				1BC5B5A51A80306E001F34B8 /* iPad-Non-Retina-Launch-Landscape.png in Resources */,
+				1BC5B5E41A82D606001F34B8 /* unlock.png in Resources */,
 				1BE667891A7E6B1E0005F52A /* iPhone-Non-Retina-Launch.png in Resources */,
 				1BE667851A7E5C460005F52A /* iPadNon-Retina-Launch.png in Resources */,
+				1BC5B5E01A81964C001F34B8 /* Universal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,21 +402,20 @@
 			files = (
 				1BE6673C1A7DA2330005F52A /* AFURLRequestSerialization.m in Sources */,
 				1BE667511A7DA3260005F52A /* UsersViewController.m in Sources */,
+				1BC5B5A81A810B30001F34B8 /* UsersController.m in Sources */,
 				1BE6673B1A7DA2330005F52A /* AFURLConnectionOperation.m in Sources */,
 				1BE6673A1A7DA2330005F52A /* AFSecurityPolicy.m in Sources */,
+				1BC5B6E21A86D5F3001F34B8 /* CustomTableViewCell.m in Sources */,
 				1BE667531A7DA3260005F52A /* WheatherViewController.m in Sources */,
 				1BE667361A7DA2330005F52A /* AFHTTPRequestOperation.m in Sources */,
 				1BE6673E1A7DA2330005F52A /* AFURLSessionManager.m in Sources */,
 				1BE6673D1A7DA2330005F52A /* AFURLResponseSerialization.m in Sources */,
 				1BE667041A7DA1EB0005F52A /* AppDelegate.m in Sources */,
-				1BE667521A7DA3260005F52A /* Wheather.m in Sources */,
 				1BE667381A7DA2330005F52A /* AFHTTPSessionManager.m in Sources */,
 				1BE667371A7DA2330005F52A /* AFHTTPRequestOperationManager.m in Sources */,
 				1BE6674E1A7DA3260005F52A /* DetailUserViewController.m in Sources */,
 				1BE667391A7DA2330005F52A /* AFNetworkReachabilityManager.m in Sources */,
-				1BE6674D1A7DA3260005F52A /* AgePickerViewController.m in Sources */,
 				1BE667501A7DA3260005F52A /* UserEntity.m in Sources */,
-				1BE6674F1A7DA3260005F52A /* SingletonUsersArray.m in Sources */,
 				1BE667001A7DA1EB0005F52A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -520,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -529,6 +531,8 @@
 		1BE6671D1A7DA1EC0005F52A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBar-UW/TabBar-UW-Prefix.pch";
 				INFOPLIST_FILE = "TabBar-UW/TabBar-UW-Info.plist";
@@ -542,6 +546,8 @@
 		1BE6671E1A7DA1EC0005F52A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBar-UW/TabBar-UW-Prefix.pch";
 				INFOPLIST_FILE = "TabBar-UW/TabBar-UW-Info.plist";

@@ -9,25 +9,30 @@
 #import "UserEntity.h"
 
 @implementation UserEntity
-@synthesize firstName,lastName,userDescription,age,isEnabled;
-- (void)encodeWithCoder:(NSCoder *)coder {
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
     [coder encodeObject:self.firstName forKey:@"FirstName"];
     [coder encodeObject:self.lastName forKey:@"LastName"];
     [coder encodeObject:self.userDescription forKey:@"UserDescription"];
+    [coder encodeObject:self.imageURL forKey:@"ImageURL"];
     NSNumber *n = [NSNumber numberWithInt:self.age];
     [coder encodeObject: n forKey:@"Age"];
     [coder encodeBool:(self.isEnabled) forKey:@"IsEnabled"];
     
 }
-- (id)initWithCoder:(NSCoder *)coder {
+
+- (id)initWithCoder:(NSCoder *)coder
+{
     self = [super init];
     if (self) {
-        firstName = [coder decodeObjectForKey:@"FirstName"];
-        lastName = [coder decodeObjectForKey:@"LastName"];
-        userDescription = [coder decodeObjectForKey:@"UserDescription"];
+        self.firstName = [coder decodeObjectForKey:@"FirstName"];
+        self.lastName = [coder decodeObjectForKey:@"LastName"];
+        self.userDescription = [coder decodeObjectForKey:@"UserDescription"];
+        self.imageURL = [coder decodeObjectForKey:@"ImageURL"];
         NSNumber *n = [coder decodeObjectForKey:@"Age"];
-        age = (int)[n integerValue];
-        isEnabled = [coder decodeBoolForKey:@"IsEnabled"];
+        self.age = (int)[n integerValue];
+        self.isEnabled = [coder decodeBoolForKey:@"IsEnabled"];
         
     }
     return self;

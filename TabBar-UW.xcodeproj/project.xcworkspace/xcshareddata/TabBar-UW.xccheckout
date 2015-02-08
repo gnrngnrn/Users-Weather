@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6DCC4798-3437-469A-B034-51BB18FC9A86</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TabBar-UW</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2ACB4FB71CEE5DA9F57CB4BDBB8BBA5AAA6F9B2E</key>
+		<string>https://github.com/gnrngnrn/Users-Weather.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TabBar-UW.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2ACB4FB71CEE5DA9F57CB4BDBB8BBA5AAA6F9B2E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gnrngnrn/Users-Weather.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2ACB4FB71CEE5DA9F57CB4BDBB8BBA5AAA6F9B2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2ACB4FB71CEE5DA9F57CB4BDBB8BBA5AAA6F9B2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TabBar-UW</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "Wheather.h"
+#import "AFNetworking.h"
+
 @interface WheatherViewController : UIViewController <CLLocationManagerDelegate>
-- (IBAction)getResult:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextView *resultField;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *progressIndicator;
+@property (strong,nonatomic) CLLocationManager *manager;
+@property (strong,nonatomic) CLGeocoder *geocoder;
+@property (strong,nonatomic) CLPlacemark *placemark;
+@property (strong,nonatomic) NSDictionary *weatherServiceResponse;
+
+- (IBAction)getResult:(id)sender;
 
 @end

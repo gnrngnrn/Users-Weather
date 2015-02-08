@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface UserEntity : NSObject
+
 @property (nonatomic,strong) NSString *firstName;
 @property (nonatomic,strong) NSString *lastName;
 @property (nonatomic,strong) NSString *userDescription;
+@property (nonatomic,strong) NSString *imageURL;
 @property (nonatomic) int age;
 @property (nonatomic) bool isEnabled;
-////
+
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
+
 @end

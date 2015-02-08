@@ -10,48 +10,35 @@
 
 #import "DetailUserViewController.h"
 
-@interface UsersViewController () {
-    NSMutableArray *_objects;
-}
+@interface UsersViewController ()
+
 @end
 
 @implementation UsersViewController
-@synthesize allUsers,singletonArray;
 
 static NSString *cellIdentifier =@"Cell";
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIBarButtonItem *barItem = [[UIBarButtonItem alloc]initWithTitle:@"+" style:UIBarButtonSystemItemAction target:self action:@selector(addNewUser:)];
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc]initWithTitle:@"+" style:UIBarButtonItemStyleDone target:self action:@selector(addNewUser:)];
     self.navigationItem.rightBarButtonItem = barItem;
     self.title = @"All Users";
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSData *encodedObject = [defaults objectForKey:@"AllUsers"];
-    allUsers = [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
-    if (!allUsers) {
-        allUsers = [[NSMutableArray alloc]init];
-    }
-    NSSortDescriptor *descriptor =[[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES selector:@selector(caseInsensitiveCompare:)];
-    NSSortDescriptor *descriptor2 =[[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:YES selector:@selector(caseInsensitiveCompare:)];
-    NSArray *sorters = @[descriptor,descriptor2];
-    NSArray *sortedUsers = [ allUsers sortedArrayUsingDescriptors:sorters];
-    allUsers = [sortedUsers mutableCopy];
-    singletonArray = [SingletonUsersArray sharedInstance];
-    singletonArray.usersArray = allUsers;
+    self.usersController = [[UsersController alloc]init];
+    [self.usersController loadArrayOfUsers];
 }
--(IBAction) addNewUser:(id)sender{
+
+-(IBAction) addNewUser:(id)sender
+{
     DetailUserViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailUserViewControllerID"];
+    [controller setUsersController:_usersController];
     UserEntity *entity = [[UserEntity alloc] init];
     controller.userEntity = entity;
     controller.delegate = self;
     [self.navigationController pushViewController:controller animated:YES];
 }
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
+
+
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -61,30 +48,29 @@ static NSString *cellIdentifier =@"Cell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return allUsers.count;
+    return _usersController.usersArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIImageView *imageView;
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    CustomTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell = [[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
-    UserEntity *current = [allUsers objectAtIndex:indexPath.row];
-    NSString *temp = [current.firstName stringByAppendingString:@" "];
-    [cell.textLabel setText:[temp stringByAppendingString: current.lastName]];
-    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
-
-    return cell;
     
+    UserEntity *current = [_usersController.usersArray objectAtIndex:indexPath.row];
+    cell.userEntity = current;
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    return cell;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 55;
 }
+
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
@@ -93,18 +79,19 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [allUsers removeObjectAtIndex:indexPath.row];
+        [_usersController.usersArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-       
+        [_usersController saveToPlist];
     }
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DetailUserViewController *controller = [segue destinationViewController];
     NSIndexPath *indePath = [self.tableView indexPathForSelectedRow];
-    UserEntity *ent = [allUsers objectAtIndex:[indePath row]];
+    UserEntity *ent = [_usersController.usersArray objectAtIndex:[indePath row]];
     controller.userEntity = ent;
+    controller.usersController = _usersController;
     controller.delegate = self;
 }
 

@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SingletonUsersArray.h"
 #import "UserEntity.h"
 #import "DetailUserViewController.h"
+#import "UsersController.h"
+#import "CustomTableViewCell.h"
+
 @interface UsersViewController : UITableViewController
 
-@property (nonatomic,strong) NSMutableArray *allUsers;
-
-@property (nonatomic,assign) SingletonUsersArray *singletonArray;
+@property (nonatomic,strong) UsersController *usersController;
 
 @end
